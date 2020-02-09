@@ -69,7 +69,7 @@ if __name__ == '__main__':
                     image[k][j][2] = 0
         image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
 
-        cv2.imwritem("gil.jpeg",image)
+        cv2.imwrite("gil.jpeg",image)
         ax = plt.subplot(2, args.batch_size, 2 * i + 1)
         ax.axis('off')
         ax.imshow(image)
